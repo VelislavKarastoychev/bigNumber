@@ -109,8 +109,10 @@ f.compareAbs(-120)//1
 **_compare(number)_**
 
 Returns 1 if the first number is greater from the second, 0 if is equals and -1 if is smaller
+
 **_absGt(n)_ or _absoluteGreater(n)_**
-Returns '''true''' if the first number is absolute bigger than the second and '''false''' otherwise
+
+Returns true if the first number is absolute bigger than the second and false otherwise
 
 _Example_
 ```javascript
@@ -121,7 +123,7 @@ a.absGt(-600);//false
 ```
 **_absGeq(n)_ or _absoluteGreaterOrEquals(n)_**
 
-Returns '''true''' if the first number is absolute bigger or equals than the second and '''false''' otherwise
+Returns true if the first number is absolute bigger or equals than the second and '''false''' otherwise
 
 _Example_
 ```javascript
