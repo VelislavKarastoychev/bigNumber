@@ -28,6 +28,7 @@ The methods of bigNumbers return bigNumber objects that allows you to chain meth
 
 
 Returns new bigNumber with the changed integer or float parts.
+
 _Example:_
 ```javascript
 let a = new bigNumber(1234.56789);
@@ -40,6 +41,7 @@ console.log(a); //'56789.1234'
 **_Number()_**
 
 Returns new instance of a bigNumber (= bigNumber.toBigNumber)
+
 _Example_
 ```javascript
 let a = new bigNumber(100),
@@ -52,6 +54,7 @@ console.log(b.value);//100
 **_Digits()_**
 
 Returns the digits of an bigNumber like bigNumber
+
 _Example_
 ```javascript
 let a = new bigNumber('123456789098765432123456789087654321');
@@ -61,6 +64,7 @@ bigNumber { value: '35', sign: '+', digits: 1, integer: '35', float: '0' }
 **_Integer()_ and _Float()_**
 
 Return the integer and the float part of a bigNumber like bigNumber object.
+
 _Example_
 ```javascript
 let n = new bigNumber('3.14159');
@@ -73,6 +77,8 @@ console.log(l.value);//'14159'
 **_convertToNumber()_ or _convertToJSNumber()_**
 
 converts the number from bigNumber to javascript (float) format.
+
+_Example_
 ```javascript
 let k = new bigNumber('21');
 k.convertToNumber()//21
@@ -82,6 +88,7 @@ l.convertToNumber()//1.2345678909876544e+54
 **_setSign()_**
 
 Returns the same number with changed the sign. (1 or '+' for positive and -1 or '-' for negative sign)
+
 _Example_
 ```javascript
 let u = new bigNumber('-213');
@@ -91,6 +98,7 @@ console.log(v.value);//213
 **_compareAbs(number)_**
 
 Returns 1 if the absolute value of the first number is greater than the second (passed as method parameter), 0 if is equal and -1 if is smaller
+
 _Example_ 
 ```javascript
 let f = new bigNumber(123)
@@ -103,6 +111,7 @@ f.compareAbs(-120)//1
 Returns 1 if the first number is greater from the second, 0 if is equals and -1 if is smaller
 **_absGt(n)_ or _absoluteGreater(n)_**
 Returns '''true''' if the first number is absolute bigger than the second and '''false''' otherwise
+
 _Example_
 ```javascript
 let a = new bigNumber('500');
@@ -113,6 +122,7 @@ a.absGt(-600);//false
 **_absGeq(n)_ or _absoluteGreaterOrEquals(n)_**
 
 Returns '''true''' if the first number is absolute bigger or equals than the second and '''false''' otherwise
+
 _Example_
 ```javascript
 let a = new bigNumber('500');
@@ -123,6 +133,7 @@ a.absGeq(-600);//false
 **_absLt(n)_ or _absoluteLesser(n)_**
 
 Returns '''true''' if the first number is lesser than the second and '''false''' otherwise
+
 _Example_
 ```javascript
 let a = new bigNumber(100);
@@ -133,6 +144,7 @@ a.absLt(100);//false
 **_absLeq(n)_ or _absoluteLesserOrEquals(n)_**
 
 Returns '''true''' if the first number is lesser or equals than the second and '''false''' otherwise
+
 _Example_
 ```javascript
 let a = new bigNumber(100);
@@ -142,8 +154,12 @@ a.absLeq(100);//true
 ```
 **_absEq(n)_ or _absoluteEquals(n)_**
 
+
 Returns '''true''' if the first number is absolute equals to the second and '''false''' otherwise
+
 **_absNeq(n)_ or _absoluteNotEquals(n)_**
+
+
 Returns true if the first number is not equals to the second and false otherwise
 Similar behavior also have the methods: **_eq(n)_ or _equals(n)_**, **_lt(n)_ or _lesser(n)_**,**_gt(n)_ or _greater(n)_**, **_geq(n)_ or _greaterOrEquals(n)_**, **_leq(n)_ or _lesserOrEquals(n)_**, **_isEven()_** and **_isOdd()_**.
 
@@ -153,6 +169,7 @@ Convert a number from base with radix fromBase to base with radix toBase. By def
  ```javascript
 bigNumber.convertToDecimal(number) 
 ```  
+
 _Example_
 ```javascript
 let x = new bigNumber('12345678').toBase(8);
@@ -171,6 +188,7 @@ console.log(x);
 **_plus(n)_**
 
 Returns the addition of the two numbers. The argument can be string, number or bigNumber type.
+
 _Example_
 ```javascript
 let a = new bigNumber('5567129807');
@@ -186,6 +204,7 @@ a.plus(b).plus('100').plus(-50);
 **_minus(n)_**
 
 Returns the sibstract between two mumbers (the bigNumber and the n).
+
 _Example_
 ```javascript
 let a = new bigNumber('342516709182');
@@ -201,7 +220,8 @@ a.minus('9876543212345');
   **_times(n)_**
 
 Returns the product of two numbers (the big Number with the number n). The function uses implementation of Karatsuba algorithm.
-  _Example_
+
+_Example_
   ```javascript
 let a = new bigNumber('4453168985467234567656764577256885011399867');
 a.times('-998112776998.13568755788997545678109432886932011547767912387');
@@ -217,6 +237,7 @@ a.times('-998112776998.13568755788997545678109432886932011547767912387');
 
 Returns the division result between the bigNumber and the number n with precision selected from the user. If precision is not inserted, then by default is 10 (10 digits after the floating point).
 The function uses the binary devision method. In the code are available also 'divide and conquer' division algorithms (recursionDivision and unbalancedDivision. For more details see: https://members.loria.fr/PZimmermann/mca/mca-0.4.pdf).
+
 _Example_
 ```javascript
 let a = new bigNumber('919283466198762342533777198111377160977127');
@@ -225,6 +246,7 @@ a.divide('9981127785789456765432178997897899775600922461.9432467567574')
 **_divInt(n)_**
 
 Returns the integer part from the division between two numbers.
+
 _Example_
 ```javascript
 let a = new bigNumber('1234567890')
@@ -235,6 +257,7 @@ a.value;
 **_mod(n)_**
 
 Returns the reminder from the division between two numbers.
+
 _Example_
 ```javascript
 let a = new bigNumber('1234567890')
@@ -245,6 +268,8 @@ a.value;
 **_factorial()_**
 
 Returns the factorial of an integer.
+
+_Example_
 ```javascript
 let a = new bigNumber(200).factorial();
 a.value;
@@ -253,6 +278,7 @@ a.value;
 **_primesList()_**
 
 Returns an array with prime numbers until to the big number.
+
 _Example_
 ```javascript
 let a = new bigNumber(30).primesList();
@@ -271,6 +297,7 @@ let a = new bigNumber(30).primesList();
 **_exp(precision)_**
 
 Returns e^bigNumber
+
 _Example_
 ```javascript
 let a = new bigNumber(1).exp(30)
@@ -278,5 +305,7 @@ a.value
 => '2.718281828459045235360287471338'
 ```
 ## Bugs and other errors##
+
 If you find an error in the algorithms structure or bugs, you can refer it in exel_mmm@abv.bg
+
 ##License## : MIT
