@@ -155,7 +155,7 @@ a.absLeq(100);//true
 **_absEq(n)_ or _absoluteEquals(n)_**
 
 
-Returns ```true``` if the first number is absolute equals to the second and ```false``` otherwise
+Returns ```javascript true``` if the first number is absolute equals to the second and ```javascript false``` otherwise
 
 **_absNeq(n)_ or _absoluteNotEquals(n)_**
 
@@ -308,5 +308,4 @@ a.value
 
 If you find an error in the algorithms structure or bugs, you can refer it in exel_mmm@abv.bg
 
-## License : 
-MIT
+## License : MIT
