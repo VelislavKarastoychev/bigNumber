@@ -123,7 +123,7 @@ a.absGt(-600);//false
 ```
 **_absGeq(n)_ or _absoluteGreaterOrEquals(n)_**
 
-Returns true if the first number is absolute bigger or equals than the second and '''false''' otherwise
+Returns true if the first number is absolute bigger or equals than the second and false otherwise
 
 _Example_
 ```javascript
@@ -134,7 +134,7 @@ a.absGeq(-600);//false
 ```
 **_absLt(n)_ or _absoluteLesser(n)_**
 
-Returns '''true''' if the first number is lesser than the second and '''false''' otherwise
+Returns true if the first number is lesser than the second and false otherwise
 
 _Example_
 ```javascript
@@ -145,7 +145,7 @@ a.absLt(100);//false
 ```
 **_absLeq(n)_ or _absoluteLesserOrEquals(n)_**
 
-Returns '''true''' if the first number is lesser or equals than the second and '''false''' otherwise
+Returns true if the first number is lesser or equals than the second and false otherwise
 
 _Example_
 ```javascript
@@ -157,7 +157,7 @@ a.absLeq(100);//true
 **_absEq(n)_ or _absoluteEquals(n)_**
 
 
-Returns ```javascript true``` if the first number is absolute equals to the second and ```javascript false``` otherwise
+Returns true if the first number is absolute equals to the second and javascript false otherwise
 
 **_absNeq(n)_ or _absoluteNotEquals(n)_**
 
