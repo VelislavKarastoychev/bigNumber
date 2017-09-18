@@ -243,7 +243,14 @@ The function uses the binary devision method. In the code are available also 'di
 _Example_
 ```javascript
 let a = new bigNumber('919283466198762342533777198111377160977127');
-a.divide('9981127785789456765432178997897899775600922461.9432467567574')
+a.divide('9981127785789456765432178997897899775600922461.9432467567574', 30)
+=> bigNumber {
+  value: '0.000092102163796318099760089502',
+  sign: '+',
+  digits: 31,
+  integer: '0',
+  float: '000092102163796318099760089502' 
+  }
 ```
 **_divInt(n)_**
 
