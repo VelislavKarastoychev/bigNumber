@@ -1,5 +1,5 @@
 # bigNumber.js
-### an arbitrary-length numbers library for javascript, that allows you to make elementary operations with lond numbers.
+### an arbitrary-length numbers library for javascript, that allows you to make elementary operations with long numbers.
 ## Usage:
 You can create a big number object with the function 
 '''
